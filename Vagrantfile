@@ -16,6 +16,7 @@ Vagrant.configure("2") do |config|
     #chef.roles_path = "./roles"
     #chef.data_bags_path = "./data_bags"
     chef.add_recipe "apache2"
+    chef.add_recipe "demo"
     #chef.log_level = :debug
   end
 
