@@ -17,7 +17,5 @@ Finally, to reduce typing in the future, add Omnibus Ruby to your path:
 * Either 'git clone' or 'download zip and expand' this repository onto your workstation
 * Next...
 
-`
-$ cd vagrant-chef-demo
-$ vagrant up
-`
+`$ cd vagrant-chef-demo`
+`$ vagrant up`
