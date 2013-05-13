@@ -97,3 +97,8 @@ There are some final (and optional depending on your setup) steps:
 
 If you look on the community site you'll see there's already an NTP cookbook. Oh no!
 This brings up an important rule in the Chef world - always check the community site first before writing your own cookbook. The community cookbook is much more feature-complete than the one we've written and is designed to fit more use cases. While this cookbook serves as a great learning process, always check the community site before developing your own cookbook.
+
+Retrospective
+-------------
+
+Compare your cookbook to the [community cookbook](http://community.opscode.com/cookbooks/ntp)
