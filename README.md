@@ -41,14 +41,14 @@ Next we need to write out the NTP configuration template using Chef's Template p
 ```ruby
 template '/etc/ntp.conf' do
   source    'ntp.conf.erb'
-  notifies  :restart, 'service[ntp]'
+  notifies  :restart, 'service[ntpd]'
 end
 ```
 
 Finally, alert Chef of the service and start it:
 
 ```ruby
-service 'ntp' do
+service 'ntpd' do
   action [:enable, :start]
 end
 ```
@@ -63,7 +63,7 @@ template '/etc/ntp.conf' do
   notifies  :restart, 'service[ntp]'
 end
 
-service 'ntp' do
+service 'ntpd' do
   action [:enable, :start]
 end
 ```
