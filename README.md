@@ -136,7 +136,7 @@ ntpd (pid  ####) is running...
 Retrospective
 -------------
 
-Compare your cookbook to the [community cookbook](http://community.opscode.com/cookbooks/ntp)
+Compare your cookbook to the [NTP Community Cookbook](http://community.opscode.com/cookbooks/ntp)
 
 Additional Resources
 --------------------
