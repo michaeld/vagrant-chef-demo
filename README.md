@@ -36,8 +36,6 @@ Install the NTP package. The package provider is built into Chef - it will check
 package 'ntp'
 ```
 
-[About the Package resource](http://docs.opscode.com/resource_package.html)
-
 Next we need to write out the NTP configuration template using Chef's Template provider:
 
 ```ruby
@@ -48,8 +46,6 @@ template '/etc/ntp.conf' do
 end
 ```
 
-[About the Template resource](http://docs.opscode.com/essentials_cookbook_templates.html)
-
 Finally, alert Chef of the service and start it:
 
 ```ruby
@@ -57,8 +53,6 @@ service 'ntpd' do
   action [:enable, :start]
 end
 ```
-
-[About the Service resource](http://docs.opscode.com/resource_service.html)
 
 Your final recipe should look like this:
 
@@ -75,6 +69,12 @@ service 'ntpd' do
   action [:enable, :start]
 end
 ```
+
+#### References
+* [About the Package resource](http://docs.opscode.com/resource_package.html)
+* [About the Template resource](http://docs.opscode.com/essentials_cookbook_templates.html)
+* [About the Service resource](http://docs.opscode.com/resource_service.html)
+
 
 Create the Template
 -------------------
