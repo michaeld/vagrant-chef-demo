@@ -5,7 +5,6 @@ Vagrant.configure("2") do |config|
   
   config.vm.box = "centos-6.3"
   config.vm.box_url = "https://s3.amazonaws.com/itmat-public/centos-6.3-chef-10.14.2.box"
-  config.vm.network :forwarded_port, guest: 8080, host: 8888  
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", 1024]
