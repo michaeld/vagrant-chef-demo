@@ -1,4 +1,4 @@
-Getting Started with Chef for Configuration Management
+Getting Started with Chef and Configuration Management
 ======================================================
 
 Workstation Setup
