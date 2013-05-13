@@ -25,6 +25,6 @@ $ vagrant up
 Chef Resources
 ==============
 
-[How Chef Works](http://www.opscode.com/chef/#how-works)
-[Learn Chef](https://learnchef.opscode.com/)
-[Chef Docs](http://docs.opscode.com/)
+* [How Chef Works](http://www.opscode.com/chef/#how-works)
+* [Learn Chef](https://learnchef.opscode.com/)
+* [Chef Docs](http://docs.opscode.com/)
