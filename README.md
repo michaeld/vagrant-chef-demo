@@ -146,4 +146,4 @@ Compare your cookbook to the [NTP Community Cookbook](http://community.opscode.c
 
 Additional Resources
 --------------------
-[Opscode Community Site](http://community.opscode.com/)
+[Checkout the Opscode Community Site](http://community.opscode.com/)
