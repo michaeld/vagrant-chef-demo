@@ -1,8 +1,8 @@
-Using Chef with Vagrant
-=======================
+Using Chef with Vagrant for provisioning virtual machines
+=========================================================
 
 Workstation Setup
-------------------------
+-----------------
 
 Install [Virtualbox 4.2+](https://www.virtualbox.org/wiki/Downloads) and [Vagrant 1.2+](http://downloads.vagrantup.com/) for your operating system.
 
@@ -21,3 +21,10 @@ Finally, to reduce typing in the future, add Omnibus Ruby to your path:
 $ cd vagrant-chef-demo
 $ vagrant up
 ```
+
+Chef Resources
+==============
+
+[How Chef Works](http://www.opscode.com/chef/#how-works)
+[Learn Chef](https://learnchef.opscode.com/)
+[Chef Docs](http://docs.opscode.com/)
