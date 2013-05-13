@@ -22,9 +22,48 @@ $ cd vagrant-chef-demo
 $ vagrant up
 ```
 
-Chef Resources
-==============
+Your First Cookbook
+===================
 
-* [How Chef Works](http://www.opscode.com/chef/#how-works)
-* [Learn Chef](https://learnchef.opscode.com/)
-* [Chef Docs](http://docs.opscode.com/)
+Write the Recipe
+----------------
+
+In the default recipe cookbooks/ntp/recipes/default.rb, add the following:
+
+Install the NTP package. The package provider is built into Chef - it will check to see the running operating system and use the appropriate method (yum, apt, etc):
+
+```ruby
+package 'ntp'
+```
+
+Next we need to write out the NTP configuration template using Chef's Template provider:
+
+```ruby
+template '/etc/ntp.conf' do
+  source    'ntp.conf.erb'
+  notifies  :restart, 'service[ntp]'
+end
+```
+
+Finally, alert Chef of the service and start it:
+
+```ruby
+service 'ntp' do
+  action [:enable, :start]
+end
+```
+
+Your final recipe should look like this:
+
+```ruby
+package 'ntp'
+
+template '/etc/ntp.conf' do
+  source    'ntp.conf.erb'
+  notifies  :restart, 'service[ntp]'
+end
+
+service 'ntp' do
+  action [:enable, :start]
+end
+```
