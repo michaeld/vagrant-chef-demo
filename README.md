@@ -87,6 +87,13 @@ driftfile /var/lib/ntp/drift
 keys /etc/ntp/keys
 ```
 
+Rerun the Chef provisioner
+--------------------------
+
+```
+>vagrant provision
+```
+
 Wrap Up
 -------
 There are some final (and optional depending on your setup) steps:
